@@ -8,7 +8,7 @@ Bu repo, finansal işlemleri makine öğrenmesi (LightGBM) ile skorlayıp operas
 
 ---
 
-## 🚀 Özellikler (Features)
+## Özellikler (Features)
 
 - **Gelişmiş Özellik Mühendisliği (Feature Engineering):** Velocity (hız/ivme), behavioral z-score, ve graph network tabanlı (ortak cihaz kullanımı) t-1 gecikmeli özellikler.
 - **Sınıf Dengesizliği (Class Imbalance) Yönetimi:** Olasılık kalibrasyonuna gerek bırakmayan, ham risk skorları üzerinden `scale_pos_weight` kullanılarak kurgulanmış LightGBM altyapısı.
@@ -18,7 +18,7 @@ Bu repo, finansal işlemleri makine öğrenmesi (LightGBM) ile skorlayıp operas
 
 ---
 
-## 🛠️ Kurulum & Çalıştırma
+## Kurulum & Çalıştırma
 
 ### Bağımlılıklar
 - Python 3.9+ 
@@ -54,10 +54,10 @@ python -m src.train
 streamlit run app/streamlit_app.py
 ```
 
-### 🧪 Unit Tests (Test Yazılımı)
+### Unit Tests (Test Yazılımı)
 Feature engineering (Özellik Mühendisliği) katmanındaki time-shift ve veri sızıntısı (leakage) kontrollerini test etmek için:
 ```bash
 pytest tests/
 ```
 
-> **📚 Önemli Dokümantasyon:** False Negative (Makine Öğrenmesi Gözden Kaçırmaları) savunmaları, Threshold/MFA stratejileri ve Mülakat Notları için 👉 [OPERATIONAL_GUIDE.md](OPERATIONAL_GUIDE.md) dosyasına göz atın.
+> **Önemli Dokümantasyon:** False Negative (Makine Öğrenmesi Gözden Kaçırmaları) savunmaları, Threshold/MFA stratejileri ve Mülakat Notları için [OPERATIONAL_GUIDE.md](OPERATIONAL_GUIDE.md) dosyasına göz atın.
